@@ -1,0 +1,107 @@
+<view class="top-banner">
+  <swiper autoplay indicator-dots="true" indicator-active-color="#fff" circular indicator-color="#bfdle0">
+    <swiper-item wx:for="{{indexMsg.indeximg}}" wx:key>
+      <image src="{{item.img}}" class="top-image"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="font-title1">
+  <view class="Cooperative Unit flex">
+    <view class="cooperative-title"> 最新消息 </view>
+    <view class="cooperative-brief"> 最新行业动态</view>
+  </view>
+  <view class="zf">
+    <view class="m-zf">
+      <image src="{{indexMsg.category[0].backImg}}" bindtap="gotoList" data-id="{{indexMsg.category[0].id}}"></image>
+    </view>
+    <view class="mm-zf">
+      <view class="tt-zf">
+        <image src="{{indexMsg.category[1].backImg}}" data-id="{{indexMsg.category[1].id}}" bindtap="gotoList"></image>
+      </view>
+      <view class="zf-bottom">
+        <view class="z-do">
+          <image src="{{indexMsg.category[2].backImg}}" data-id="{{indexMsg.category[2].id}}" bindtap="gotoList"></image>
+        </view>
+        <view class="z-safe">
+          <image src="{{indexMsg.category[4].backImg}}" data-id="{{indexMsg.category[3].id}}" bindtap="gotoList"></image>
+        </view>
+      </view>
+
+
+
+    </view>
+  </view>
+  <view class="h-zf">
+    <image src="{{indexMsg.category[3].backImg}}"></image>
+  </view>
+</view>
+
+<view class="swiper2">
+  <swiper autoplay indicator-dots="true">
+    <swiper-item wx:for="{{indexMsg.activity}}" wx:key>
+      <image src="{{item.cover}}" class="middle-image"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="flex-sp">
+  <view class="Cooperative Unit flex">
+    <view class="cooperative-title"> 最新消息 </view>
+    <view class="cooperative-brief"> 最新行业动态</view>
+  </view>
+  <view class="flex">
+    <view class="more" bindtap="toNews">更多</view>
+    <view>
+      <image src="/images/icon_right.png" class="arrow-image"></image>
+    </view>
+  </view>
+</view>
+<view class='flex wrap' wx:for="{{indexMsg.information}}" wx:key  data-id="{{item.id}}" bindtap="gotodetail">
+  <image src='{{item.cover}}' class='list-img'></image>
+  <view class='news-right'>
+    <view class='news-brief'>{{item.title}}</view>
+    <view class='news-active'>{{item.category}}</view>
+    <view class='flex-sp'>
+      <view class='news-time'>{{item.time}}</view>
+      <view class='flex'>
+        <view class='news-num'>{{item.likenum}}</view>
+        <image src='/images/icon_g_like.png' class='heart-img'></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="flex-sp">
+  <view class="Cooperative Unit flex">
+    <view class="cooperative-title"> 合作单位 </view>
+    <view class="cooperative-brief"> 最新行业动态</view>
+  </view>
+  <view class="flex">
+    <view class="more">更多</view>
+    <view>
+      <image src="/images/icon_right.png" class="arrow-image"></image>
+    </view>
+  </view>
+</view>
+
+<view class="company-imgs flex-wrap">
+<view  wx:for="{{indexMsg.company}}" wx:key>
+<image class="company-img" src="{{item.cover}}"></image>
+</view>
+</view>
+
+
+
+
+
+<view class="cover-model" wx:if="{{showModel==1 && slient==2}}">
+  <view class="model" wx:if="{{showModel==1 && slient==2}}">
+    <view class="title-tip">小程序授权提示</view>
+    <view class="title-detail">允许小程序获得你的头像昵称信息</view>
+    <view class="flex model-btn">
+      <view class="cancel" bindtap="cancel"  wx:if="{{showModel==1  && slient==2}}">取消</view>
+      <view class="confirm">确定
+      <button open-type="getUserInfo" class="confirm-btn" bindgetuserinfo="getUserInfo" open-type="getUserInfo"></button>
+      </view>
+    </view>
+  </view>
+</view>

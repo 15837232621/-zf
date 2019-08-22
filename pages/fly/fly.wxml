@@ -1,0 +1,48 @@
+<map longitude="{{inviteDetail.lng}}" latitude="{{inviteDetail.lat}}" markers="{{markers}}" show-location style="width: 100%; height: 322rpx;">
+</map>
+ <cover-view class="list">
+  <cover-view class="list-items" bindtap="changeindex">
+    <cover-image src="/images/green.jpg" class="recruitment-image" wx:if="{{!type}}"></cover-image>
+    <cover-image src="/images/icon_b_qz.png" class="recruitment-image" wx:if="{{type}}"></cover-image>
+    <cover-view class="recruitment {{!type?'':'active'}}">{{inviteDetail.start}}</cover-view>
+    <cover-view class="list-instrouce">
+      <cover-view class="flex">
+        <cover-view class="introduce">航空公司</cover-view>
+        <cover-view class="flex">
+          <cover-image    wx:if="{{inviteDetail.logo}}"  src="{{inviteDetail.logo}}" class="img1"></cover-image>
+          <cover-view class="detail">{{inviteDetail.company}}</cover-view>
+        </cover-view>
+        <cover-view>
+        </cover-view>
+      </cover-view>
+      <cover-view class="flex middle-introduce">
+        <cover-view class="introduce">开始时间</cover-view>
+        <cover-view class="flex">
+          <cover-view class="detail">{{inviteDetail.starttime}}</cover-view>
+          <cover-view class="link">预计</cover-view>
+        </cover-view>
+      </cover-view>
+
+      <cover-view class="flex">
+        <cover-view class="introduce">招聘地址</cover-view>
+        <cover-view class="flex">
+          <cover-view class="detail">{{inviteDetail.address}}</cover-view>
+        </cover-view>
+
+      </cover-view>
+
+
+
+
+
+    </cover-view>
+
+
+
+  </cover-view>
+</cover-view>
+  <view class="title">面试要求
+  </view>
+<rich-text nodes="{{inviteDetail.content}}"></rich-text>
+
+

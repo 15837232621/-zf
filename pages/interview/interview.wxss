@@ -1,0 +1,11 @@
+
+page {
+  box-sizing: border-box;
+  padding:20rpx;
+}
+.title{
+	font-family: PingFang-SC-Bold;
+	font-size: 40rpx;
+	letter-spacing: 1rpx;
+	color: #333333;
+}

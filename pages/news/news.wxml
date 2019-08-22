@@ -1,0 +1,62 @@
+<view class="tabPd flex-sp">
+  <view class="tab {{type==8974?'active':''}}" bindtap="changeTab" data-type="8974">
+    <view>行业动态 </view>
+    <view class="line"></view>
+  </view>
+  <view class="tab {{type==8975?'active':''}}" bindtap="changeTab" data-type="8975">
+    <view>行业新闻 </view>
+    <view class="line"></view>
+  </view>
+</view>
+<view class="list-title1" wx:if="{{type==8974}}" wx:for="{{orderlist}}" wx:key>
+  <view class="list-type" >
+    <view class='flex list' bindtap="toDetails" data-id="{{item.id}}">
+      <image src='{{item.cover}}' class='list-img'></image>
+      <view class='news-right'>
+        <view class='news-brief'>{{item.title}}</view>
+        <view class='news-active'>{{item.category}}</view>
+        <view class='flex-sp'>
+          <view class='news-time'>{{item.time}}</view>
+          <view class='flex'>
+            <view class='news-num'>{{item.likenum}}</view>
+            <image src='/images/icon_g_like.png' class='heart-img'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="list-title1" wx:if="{{type==8975}}" wx:for="{{orderlist}}" wx:key>
+  <view class="list-type">
+    <view class='flex list'>
+      <image src='{{item.cover}}' class='list-img'></image>
+      <view class='news-right'>
+        <view class='news-brief' bindtap="toDetails">{{item.title}}</view>
+        <view class='news-active'>{{item.category}}</view>
+        <view class='flex-sp'>
+          <view class='news-time'>{{item.time}}</view>
+          <view class='flex'>
+            <view class='news-num'>{{item.likenum}}</view>
+            <image src='/images/icon_g_like.png' class='heart-img'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{noMoretip}}">没有更多了</view>
+<view class="loading-tip" wx:if="{{showLoading}}">
+  <view class="icon_load">
+    <view id="floatingBarsG">
+      <view class="blockG" id="rotateG_01"></view>
+      <view class="blockG" id="rotateG_02"></view>
+      <view class="blockG" id="rotateG_03"></view>
+      <view class="blockG" id="rotateG_04"></view>
+      <view class="blockG" id="rotateG_05"></view>
+      <view class="blockG" id="rotateG_06"></view>
+      <view class="blockG" id="rotateG_07"></view>
+      <view class="blockG" id="rotateG_08"></view>
+    </view>
+  </view>
+  <text>数据加载中</text>
+</view>

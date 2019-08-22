@@ -1,0 +1,59 @@
+{
+  "pages": [
+   "pages/index/index",
+    "pages/updateImg/updateImg",
+    "pages/nterviewExp/nterviewExp",
+    "pages/expert/expert",
+    "pages/index4/index4",
+    "pages/serverDetail/serverDetail",
+   "pages/personFly/personFly",
+    "pages/fly/fly",
+    "pages/index5/index5",
+    "pages/index2/index2",
+    "pages/interview/interview",
+    "pages/news/news",
+    "pages/newsDetails/newsDetails",
+    "pages/index3/index3"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/icon_g_home.png",
+        "selectedIconPath": "/images/icon_b_home.png"
+      },
+      {
+        "pagePath": "pages/index2/index2",
+        "text": "面试技巧",
+        "iconPath": "/images/icon_g_skill.png",
+        "selectedIconPath": "/images/icon_b_skill.png"
+      },
+      {
+        "pagePath": "pages/index3/index3",
+        "text": "优选",
+        "iconPath": "/images/icon_g_shop.png",
+        "selectedIconPath": "/images/icon_b_shop.png"
+      },
+      {
+        "pagePath": "pages/index4/index4",
+        "text": "体检服务",
+        "iconPath": "/images/icon_g_inspect.png",
+        "selectedIconPath": "/images/icon_b_inspect.png"
+      },
+      {
+        "pagePath": "pages/index5/index5",
+        "text": "人才库",
+        "iconPath": "/images/icon_g_wd.png",
+        "selectedIconPath": "/images/icon_b_wd.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

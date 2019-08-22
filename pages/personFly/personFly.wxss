@@ -1,0 +1,71 @@
+page {
+  background-color: #f8f8f8;
+}
+
+.list {
+  padding: 0 20rpx 20rpx 20rpx;
+  margin: 20rpx 0;
+}
+
+.list-items {
+  width: 710rpx;
+  height: 291rpx;
+  background-color: #fff;
+  box-shadow: 0rpx 3rpx 24rpx 0rpx rgba(162, 162, 162, 0.21);
+  border-radius: 10rpx;
+  position: relative;
+}
+
+.recruitment {
+  width: 100rpx;
+  height: 41rpx;
+  text-align: center;
+  font-family: PingFang-SC-Medium;
+  font-size: 22rpx;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.recruitment.active {
+  color: #fff;
+}
+
+.recruitment-image {
+  width: 106rpx;
+  height: 41rpx;
+}
+
+.img1 {
+  width: 34rpx;
+  height: 26rpx;
+}
+
+.introduce {
+  font-family: PingFang-SC-Medium;
+  font-size: 30rpx;
+  color: #999;
+  margin: 0 27rpx 0 42rpx;
+}
+.detail{
+  color: #333;
+  font-size: 30rpx;
+  margin-left: 1rpx;
+}
+.list-instrouce{
+  height: 150rpx;
+  margin: 16rpx 0 0 0;
+}
+.middle-introduce{
+  margin:33rpx 0;
+}
+.link{
+  width: 54rpx;
+	height: 33rpx;
+	font-family: PingFang-SC-Medium;
+	font-size: 22rpx;
+  background-color: #e0eeff;
+	color: #2e8bff;
+  margin-left: 16rpx;
+}

@@ -1,0 +1,46 @@
+
+page{
+  box-sizing: border-box;
+  padding:20rpx;
+}
+.news-title {
+  font-family: PingFang-SC-Bold;
+  font-size: 40rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 60rpx;
+  letter-spacing: 2rpx;
+  color: #333;
+}
+
+.underTime {
+  font-family: PingFang-SC-Medium;
+  font-size: 26rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 44rpx;
+  letter-spacing: 0rpx;
+  color: #999;
+  margin-top: 34rpx;
+}
+.artical{
+ margin-top: 46rpx;
+}
+.artical view{
+  font-family: PingFang-SC-Medium;
+  font-size: 30rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 48rpx;
+  letter-spacing: 2rpx;
+  color: #666;
+  text-indent: 2em;
+}
+
+.detail-image{
+  width: 706rpx;
+  height: 375rpx;
+}
+.middle-text{
+  text-align: center;
+}

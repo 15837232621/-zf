@@ -1,0 +1,36 @@
+<view class="search">
+  <view class="search-input flex-sp">
+    <input type="text" placeholder="搜索症状、疾病" class="searchs" bindinput="watchInput">
+    </input>
+    <image src="/images/icon_fl_sousuo.png" class="search-img" bindtap="search"></image>
+  </view>
+</view>
+
+
+<view class="top-tabs">
+</view>
+
+<view class="list-title1"  wx:for="{{serverList}}" wx:key>
+  <view class="list-type">
+    <view class=' list flex-sp'>
+      <view class="title">{{item.title}}</view>
+      <view class="read">阅读量：{{item.read}}</view>
+    </view>
+  </view>
+</view>
+<!-- <view wx:if="{{noMoreTip}}">没有更多了</view> -->
+<view class="loading-tip" wx:if="{{showLoading}}">
+  <view class="icon_load">
+    <view id="floatingBarsG">
+      <view class="blockG" id="rotateG_01"></view>
+      <view class="blockG" id="rotateG_02"></view>
+      <view class="blockG" id="rotateG_03"></view>
+      <view class="blockG" id="rotateG_04"></view>
+      <view class="blockG" id="rotateG_05"></view>
+      <view class="blockG" id="rotateG_06"></view>
+      <view class="blockG" id="rotateG_07"></view>
+      <view class="blockG" id="rotateG_08"></view>
+    </view>
+  </view>
+  <text>数据加载中</text>
+</view>

@@ -1,0 +1,27 @@
+<view class="flex-sp message">
+  <view class="my-message">
+    <view class="name"><open-data type="userNickName"> </open-data>  {{userInfo.nickName}}</view>
+    <view class="myname">爱吃瓜的小王(昵称)</view>
+  </view>
+  <view class="myimage"> <open-data type="userAvatarUrl"> </open-data></view>
+</view>
+<view class="dream flex-sp">
+  <view class="dream-city flex-sp">
+    <view class="dream-total">
+      <view class="dream-city-target">意向城市 </view>
+      <view class="dream-city-text">天津 </view>
+    </view>
+    <image src="/images/icon_city3.png" class="icon_city3"></image>
+
+  </view>
+  <view class="dream-compony flex-sp">
+   <view class="dream-total">
+      <view class="dream-city-target">意向航空 </view>
+      <view class="dream-city-text">天津航空 </view>
+    </view>
+    <image src="/images/icon_plane.png" class="icon_plane"></image>
+
+  </view>
+</view>
+
+<image src="/images/img12.png" class="tab-image"></image>

@@ -1,0 +1,25 @@
+<view class="content">
+  <view class="top">
+    <view class="top-title1">标题</view>
+    <view class="top-title2">
+      <input type="text" placeholder="请输入标题"></input>
+    </view>
+  </view>
+
+  <view class="middle">
+    <view class="middle-title1">正文</view>
+    <textarea class="middle-title2" placeholder="分享您的面试经验"></textarea>
+  </view>
+  <view class="bottom">封面图</view>
+</view>
+     <block wx:for="{{images}}" wx:key>    
+  <view class="bottom-pic" wx:if="{{item}}" >
+    <image src="{{item}}" class="bottom-pic1 {{item?'add-img':''}}" bindtap="chooseImage"  bindtap="testImg" data-imgs="{{item.url}}"> </image>
+    <image src="/images/icon_delete.png" class="cancel" bindtap="delete" wx:if="{{item}}" data-index="{{index}}"></image>
+  </view>
+      </block>
+  <view class="bottom-pic">
+    <image src="/images/add.png" class="bottom-pic1" bindtap="chooseImage"></image>
+    <image src="/images/icon_delete.png" class="cancel" bindtap="delete"></image>
+  </view>
+<button type="submit" class="btn"> 立即咨询 </button>

@@ -1,0 +1,39 @@
+<view class="list" bindtap="toFly"  wx:for="{{messageList}}" wx:key>
+  <view class="list-items" data-id="{{item.id}}" bindtap="gotoDetail">
+    <image src="/images/green.jpg" class="recruitment-image" wx:if="{{item.clock==0}}"></image>
+    <image src="/images/icon_b_qz.png" class="recruitment-image" wx:if="{{item.clock==1}}"></image>
+    <view class="recruitment {{item.clock==0?'':'active'}}">{{item.start}}</view>
+    <view class="list-instrouce">
+      <view class="flex">
+        <view class="introduce">航空公司</view>
+        <view class="flex">
+          <image src="/images/img1.png" class="img1"></image>
+          <view class="detail">{{item.company}}</view>
+        </view>
+        <view>
+        </view>
+      </view>
+      <view class="flex middle-introduce">
+        <view class="introduce">开始时间</view>
+        <view class="flex">
+          <view class="detail">{{item.starttime}}</view>
+          <view class="link">预计</view>
+        </view>
+      </view>
+      <view class="flex">
+        <view class="introduce">招聘地址</view>
+        <view class="flex">
+          <view class="detail">{{item.address}}</view>
+        </view>
+      </view>
+
+
+
+
+
+    </view>
+
+
+
+  </view>
+</view>

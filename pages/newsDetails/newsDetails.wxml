@@ -1,0 +1,14 @@
+<view class="news-title"> {{newsDetails.title}}
+</view>
+<view class="flex-sp underTime">
+  <view> {{newsDetails.time}}</view>
+  <view class="flex">
+    <view class="news-num">{{msg.count?msg.count:newsDetails.likenum}}</view>
+    <image src="/images/icon_detail_ysc.png" class="heart-img" bindtap="likeYou" wx:if="{{newsDetails.member==1}}" data-type="1"></image>
+    <image src="/images/icon_g_like.png" class="heart-img" bindtap="likeYou" wx:if="{{newsDetails.member==0}}"  data-type="2"></image>
+  </view>
+</view>
+<rich-text nodes="{{content}}" wx:if="{{newsDetails.content}}"></rich-text>
+<!-- <image src="{{newsDetails.content}}"></image> -->
+
+

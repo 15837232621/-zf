@@ -1,0 +1,59 @@
+<swiper auexamlay indicator-dots="true" indicator-active-color="#fff" circular indicator-color="#bfdle0" class="exam">
+  <swiper-item wx:for="{{index4.indeximg}}" wx:key>
+    <image src="{{item.img}}" class="exam-image"></image>
+  </swiper-item>
+</swiper>
+<view class="flex-sp consultation">
+  <view class="flex">
+    <image src="/images/icon_zx.png" class="icon-zx"></image>
+    <view class="one-consultation ">
+      <view class="one-text" bindtap="toLook">一键咨询</view>
+      <view class="two-text">专家团队解惑</view>
+    </view>
+  </view>
+  <view class="flex">
+    <image src="/images/icon_bm.png" class="icon-zx"></image>
+    <view class="two-consultation">
+      <view class="one-text">预体检报名</view>
+      <view class="two-text">三甲医师会诊</view>
+      <button open-type="contact" class="btn-contact"></button>
+    </view>
+  </view>
+
+</view>
+<view class="consultation-attention">
+  <view class="attention">体检注意事项</view>
+  <view class="attention-items flex-spy"  >
+    <view class="attention-item"  wx:for="{{index4.shixiang}}" wx:key>
+      <image src="{{item.img}}" class="attention-item-img"  bindtap="toSearch" data-id="{{item.id}}" ></image>
+      <view>{{item.name}}</view>
+    </view>
+  </view>
+</view>
+<view class="flex-sp problem">
+  <view class="Cooperative Unit flex">
+    <view class="cooperative-title"> 常见问题 </view>
+  </view>
+  <view class="flex">
+    <view class="more">更多</view>
+      <image src="/images/icon_right.png" class="arrow-image"></image>
+  </view>
+</view>
+<view class="list-title1">
+  <view class="list-type" wx:for="{{index4.information}}" wx:key>
+    <view class='flex list'>
+      <image src='{{item.cover}}' class='list-img'></image>
+      <view class='news-right'>
+        <view class='news-brief' bindtap="toDetails">{{item.title}}</view>
+        <view class='news-active'>{{item.category}}</view>
+        <view class='flex-sp'>
+          <view class='news-time'>{{item.time}}</view>
+          <view class='flex'>
+            <view class='news-num'>{{item.likenum}}</view>
+            <image src='/images/icon_g_like.png' class='heart-img'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,72 @@
+page {
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+  padding:0 20rpx;
+}
+.expert-image{
+  width: 210rpx;
+  height: 210rpx;
+  margin-top: 22rpx;
+}
+.expert{
+  background-color: #fff;
+}
+.expert-instroduce{
+width: 430rpx;
+height: 235rpx;
+overflow: hidden;
+}
+.expert-instroduce.active{
+width: 430rpx;
+height: auto;
+}
+.expert-title{
+  font-size: 34rpx;
+  font-weight: 600;
+  margin-bottom: 16rpx;
+}
+.expert-intro{
+  font-size: 24rpx;
+  color: #999;
+  word-wrap: break-word;
+  letter-spacing: 4rpx;
+}
+.retract{
+  width: 100vw;
+  height: 50rpx;
+  background-color: #fff;
+  font-size: 24rpx;
+  color: #3867d3;
+}
+.person-intro{
+    margin-top: 20rpx;
+    background-color: #fff;
+ 
+}
+.person-intro-title{
+   font-size: 34rpx;
+  font-weight: 600;
+}
+.person-content{
+   font-size: 24rpx;
+  color: #999;
+   font-weight: normal;
+  word-wrap: break-word;
+  letter-spacing: 4rpx;
+  padding-top: 20rpx;
+}
+.go-check{
+  width: 710rpx;
+  height: 50rpx;
+  background-color: #3867d3;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom:20rpx;
+  border-radius: 5rpx;
+  font-weight: normal;
+     font-size:30 rpx;
+     line-height: 50rpx;
+  
+}
+

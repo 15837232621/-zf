@@ -1,0 +1,23 @@
+<view class="flex-spa expert">
+  <view class="expert-instroduce {{!retract?'active':''}}">
+    <view class="expert-title">计永波是</view>
+    <view class="expert-intro ">记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加</view>
+  </view>
+  <image class="expert-image" src="/images/rw.png"></image>
+</view>
+<view class="retract" bindtap="retract" wx:if="{{!retract}}">收起</view>
+<view class="retract" bindtap="retract" wx:if="{{retract}}">更多</view>
+
+
+<view class="person-intro">
+  <view class="person-intro-title">个人简介
+    <view class="person-content">记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工卡德加记得送金佛卡死电焊工</view>
+  </view>
+
+
+
+
+</view>
+
+
+<view class="go-check">立即咨询</view>

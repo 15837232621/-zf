@@ -1,0 +1,99 @@
+<view class="top-tabs">
+  <view class="tabPd flex-sp">
+    <view class="tab {{type==1?'active':''}}" bindtap="changeTab" data-type="1">
+      <view>面试技巧 </view>
+    </view>
+    <view class="tab {{type==2?'active':''}}" bindtap="changeTab" data-type="2">
+      <view>面试经历 </view>
+    </view>
+    <view class="tab {{type==3?'active':''}}" bindtap="changeTab" data-type="3">
+      <view> 面试绝招 </view>
+    </view>
+  </view>
+</view>
+
+<view class="top-banner">
+  <swiper autoplay indicator-dots="true">
+    <swiper-item>
+      <image src="/images/banner.png" class="top-image"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/banner2.png" class="top-image"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/banner3.png" class="top-image"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+
+<view class="list-title1" wx:if="{{type==1}}" wx:for="{{faceList}}" wx:key>
+  <view class="list-type">
+    <view class='flex list'>
+      <image src='{{item.img}}' class='list-img'></image>
+      <view class='news-right'>
+        <view class='news-brief' bindtap="toDetails">{{item.title}}</view>
+        <view class='news-active'>行业动态</view>
+        <view class='flex-sp'>
+          <view class='news-time'>{{item.time}}</view>
+          <view class='flex'>
+            <view class='news-num'>{{item.like}}</view>
+            <image src='/images/icon_g_like.png' class='heart-img'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="list-title1" wx:if="{{type==2}}" wx:for="{{faceList}}" wx:key>
+  <view class="list-type">
+    <view class='flex list'>
+      <image src='{{item.img}}' class='list-img'></image>
+      <view class='news-right'>
+        <view class='news-brief' bindtap="toDetails">{{item.title}}</view>
+        <view class='news-active'>行业动态</view>
+        <view class='flex-sp'>
+          <view class='news-time'>{{item.time}}</view>
+          <view class='flex'>
+            <view class='news-num'>{{item.like}}</view>
+            <image src='/images/icon_g_like.png' class='heart-img'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="list-title1" wx:if="{{type==3}}" wx:for="{{faceList}}" wx:key>
+  <view class="list-type">
+    <view class='flex list'>
+      <image src='{{item.img}}' class='list-img'></image>
+      <view class='news-right'>
+        <view class='news-brief' bindtap="toDetails">{{item.title}}</view>
+        <view class='news-active'>行业动态</view>
+        <view class='flex-sp'>
+          <view class='news-time'>{{item.time}}</view>
+          <view class='flex'>
+            <view class='news-num'>{{item.like}}</view>
+            <image src='/images/icon_g_like.png' class='heart-img'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{noMoreTip}}">没有更多了</view>
+<view class="loading-tip" wx:if="{{showLoading}}">
+  <view class="icon_load">
+    <view id="floatingBarsG">
+      <view class="blockG" id="rotateG_01"></view>
+      <view class="blockG" id="rotateG_02"></view>
+      <view class="blockG" id="rotateG_03"></view>
+      <view class="blockG" id="rotateG_04"></view>
+      <view class="blockG" id="rotateG_05"></view>
+      <view class="blockG" id="rotateG_06"></view>
+      <view class="blockG" id="rotateG_07"></view>
+      <view class="blockG" id="rotateG_08"></view>
+    </view>
+  </view>
+  <text>数据加载中</text>
+</view>
